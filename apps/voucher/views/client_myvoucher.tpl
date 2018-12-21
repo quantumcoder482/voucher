@@ -6,14 +6,9 @@
 {/block}
 {block name="content"}
 <div>
-{$user['account']}
-      {foreach $countries as $v}
-        <p>{$v}</p>
-      {/foreach}
-
-
+    {$user['account']}
 </div>
-    <div>ddd</div>
+   
 {/block}
 
 {block name=script}
