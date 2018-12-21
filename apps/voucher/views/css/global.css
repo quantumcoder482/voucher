@@ -1,0 +1,56 @@
+.info{
+    text-align: left;
+}
+.info tr td:first-child{
+    text-align:left;
+    height: 30px;
+    width: 100px;
+    font-weight: 600;
+    
+}
+.info td{
+    text-align: left;
+}
+
+th{
+    text-align: center;
+    vertical-align: middle;
+}
+tr,td{
+    text-align: center;
+    vertical-align: middle;
+}
+
+.square-deactive {
+    background-color:#A9A9A9;
+    border-color:#A9A9A9;
+    color:#f8f8f8;
+    font-weight:600;
+    font-size: 10pt;
+    width: 80px
+}
+.square-active {
+    background-color:#00CC00;
+    border-color:#00CC00;
+    color:#f8f8f8;
+    font-weight:600;
+    font-size: 10pt;
+    width: 80px
+}
+.square-redeem {
+    background-color: #751bcc;
+    border-color:#751bcc;
+    color:#f8f8f8;
+    font-weight:600;
+    font-size: 10pt;
+    width: 80px
+}
+.square-expire {
+    background-color: #cc001c;
+    border-color:#cc001c;
+    color:#f8f8f8;
+    font-weight:600;
+    font-size: 10pt;
+    width: 80px
+}
+

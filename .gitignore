@@ -1,0 +1,6 @@
+.gitignore
+.idea/
+/apps/ide/
+/storage/voucher/
+/storage/compiled/
+/apps/voucher/public/
