@@ -28,7 +28,7 @@
                                 <select id="country" name="country" class="form-control" style="width:100%">
                                     <option value="">Select Country</option>
                                     {foreach $country_list as $c}
-                                     <option value="{$c['id']}" >{$c['country_name']}</option>
+                                     <option value="{$c['id']}" >{$c['country_name']} ({$c['category']})</option>
                                     {/foreach}
                                 </select>
                                 <span class="help-block"><a href="#" class="add_country"><i class="fa fa-plus"></i>New Country</a>
@@ -37,9 +37,9 @@
                             </div>
                         </div>
 
-                        <div class="form-group"><label class="col-md-2 control-label" for="category">Category <small class="red">*</small></label>
+                        <div class="form-group"><label class="col-md-2 control-label" for="category">Prefix <small class="red">*</small></label>
 
-                            <div class="col-md-10"><input type="text" id="category" name="category" class="form-control" disabled autocomplete="off">
+                            <div class="col-md-10"><input type="text" id="prefix" name="prefix" class="form-control" disabled autocomplete="off">
 
                             </div>
                         </div>
@@ -106,7 +106,6 @@
                         </div>
 
 
-                        <input type="hidden" name="vehicle_file" id="vehicle_file" value="">
                         <input type="hidden" name="voucher_img" id="voucher_img" value="">
 
                         <div class="form-group">

@@ -51,7 +51,7 @@ $(document).ready(function () {
         $.post(_url + 'voucher/app/get_country_info', {'id':c_id})
             .done(function(data){
                 if(data){
-                    $('#category').val(data.category);
+                    $('#prefix').val(data.prefix);
                 }
             });
 

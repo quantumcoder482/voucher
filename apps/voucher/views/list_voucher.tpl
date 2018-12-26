@@ -32,7 +32,7 @@
                     </form>
                 {/if}
 
-                <table class="table table-bordered table-hover sys_table footable" {if $view_type=='filter' } data-filter="#foo_filter" data-page-size="10"{/if}>
+                <table class="table table-bordered table-hover sys_table footable" {if $view_type=='filter' } data-filter="#foo_filter" data-page-size="20"{/if}>
                     <thead>
                     <tr>
                         <th>#</th>
@@ -50,10 +50,10 @@
                     </thead>
                     <tbody>
 
-                    {foreach $vouchers as $v}
+                    {foreach $vouchers as $key => $v}
                         <tr>
                             <td data-value="{$v['id']}">
-                                {$v['id']}
+                                {$key+1}
                             </td>
 
                             <td data-value="{strtotime($v['created_date'])}">
@@ -87,11 +87,12 @@
                             </td>
 
                             <td data-value="">
-                                &nbsp;
+                                {$generated_voucher[$v['id']]}
+                                <span style="color: #CAA931;">({$active_voucher[$v['id']]})</span>
                             </td>
 
                             <td data-value="">
-                                &nbsp;
+                                <span style="color:#CAA931">{$pages[$v['id']]}</span>
                             </td>
 
                             <td class="text-center">

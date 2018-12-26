@@ -52,8 +52,6 @@ $(document).ready(function () {
        
     });
 
-
-
     $(".cdelete").click(function (e) {
 
         e.preventDefault();
@@ -66,7 +64,7 @@ $(document).ready(function () {
 
                 var _url = $("#_url").val();
 
-                window.location.href = _url + "voucher/app/delete_voucher_format" + id;
+                window.location.href = _url + "voucher/app/delete_voucher_format/" + id;
             }
         });
     });

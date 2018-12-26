@@ -30,6 +30,6 @@ $admin_voucher_sub_menus = [
 
 add_menu_admin('Voucher',U.'voucher/app','voucher','fa fa-credit-card',2,$admin_voucher_sub_menus);
 
-add_menu_client('My Voucher',U.'voucher/client','myvoucher','fa fa-credit-card',2,'' ,'/voucher','/client');
+add_menu_client('My Voucher',U.'voucher/client/myvoucher','myvoucher','fa fa-credit-card',2);
 
-add_menu_client('Voucher Shop',U.'voucher/client','vouchershop','fa fa-credit-card',2);
+add_menu_client('Voucher Shop',U.'voucher/client/vouchershop','vouchershop','fa fa-credit-card',2);

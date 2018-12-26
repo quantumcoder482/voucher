@@ -77,7 +77,9 @@
                     {* Flag upload *}
 
                     <div class="ibox-title">
-                        Upload Flag Image
+                        <h5>
+                            Upload Flag Image
+                        </h5>
                     </div>
                     <div class="ibox-content" id="ibox_form">
 
@@ -126,7 +128,7 @@
                         </div>
                     </form>
 
-                    <table class="table table-bordered table-hover sys_table footable" data-filter="#foo_filter" data-page-size="50">
+                    <table class="table table-bordered table-hover sys_table footable" data-filter="#foo_filter" data-page-size="20">
                         <thead>
                         <tr>
                             <th>#</th>
@@ -140,9 +142,9 @@
                         </thead>
                         <tbody>
 
-                        {foreach $list_country as $country}
+                        {foreach $list_country as $key=>$country}
                             <tr>
-                                <td data-value="{$country['id']}">{$country['id']}</td>
+                                <td data-value="{$country['id']}">{$key+1}</td>
                                 <td data-value="{$country['country_name']}">{$country['country_name']}</td>
                                 <td data-value="{$country['prefix']}">{$country['prefix']}</td>
                                 <td data-value="{$country['category']}">{$country['category']}</td>

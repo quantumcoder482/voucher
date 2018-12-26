@@ -32,7 +32,7 @@
                     <div class="table-responsive" id="ib_data_panel">
 
 
-                        <table class="table table-bordered table-hover display" id="ib_dt" width="100%">
+                        <table class="table table-bordered table-hover display" id="ib_dt">  <!--width="100%" -->
                             <thead>
                             <tr class="heading">
                                 {*<th><input id="d_select_all" type="checkbox" value="" name=""  class="i-checks"/></th>*}
@@ -87,17 +87,6 @@
 
             $ib_data_panel.block({ message:block_msg });
 
-            var selected = [];
-            var ib_act_hidden = $("#ib_act_hidden");
-            function ib_btn_trigger() {
-                if(selected.length > 0){
-                    ib_act_hidden.show(200);
-                }
-                else{
-                    ib_act_hidden.hide(200);
-                }
-            }
-
 
             $('[data-toggle="tooltip"]').tooltip();
 
@@ -121,7 +110,6 @@
                 dom: "<'row'<'col-sm-6'i><'col-sm-6'B>>" +
                 "<'row'<'col-sm-12'tr>>" +
                 "<'row'<'col-sm-5'><'col-sm-7'p>>",
-
                 lengthMenu: [
                     [ 10, 25, 50, -1 ],
                     [ '10 rows', '25 rows', '50 rows', 'Show all' ]
@@ -197,11 +185,7 @@
                 }
             } );
 
-
-
-
             var $ib_filter = $("#ib_filter");
-
 
             $ib_filter.on('click', function(e) {
                 e.preventDefault();
